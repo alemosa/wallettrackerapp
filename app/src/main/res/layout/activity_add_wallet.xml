@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:useDefaultMargins="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/tvWAliasAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Wallet Alias"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etWAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a name for your wallet..."
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvWTypeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Wallet Type:"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spWalletType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/tvWAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Address"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your wallet's address..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="14sp"/>
+        <ImageView
+            android:id="@+id/ivQRreader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="readQRCode"
+            android:src="@drawable/ic_qrreader"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/btn_add_wallet"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_add_circle_black_48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10dp"
+            android:padding="5dp"
+            android:text="add wallet"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

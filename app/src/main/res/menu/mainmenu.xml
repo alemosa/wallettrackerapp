@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id ="@+id/main_menu">
+    <item
+        android:id="@+id/action_addwallet"
+        android:orderInCategory="1"
+        android:title="+"
+        android:icon="@drawable/ic_add_white_48dp"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_currency"
+        android:icon="@drawable/ic_currency_change"
+
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:title="Currency">
+        <menu>
+            <item android:id="@+id/action_currency_eur"
+                app:showAsAction="ifRoom"
+                android:title="EUR" />
+            <item android:id="@+id/action_currency_usd"
+                app:showAsAction="ifRoom"
+                android:title="USD" />
+            <item android:id="@+id/action_currency_gbp"
+                app:showAsAction="ifRoom"
+                android:title="GBP" />
+            <item android:id="@+id/action_currency_cny"
+                app:showAsAction="ifRoom"
+                android:title="CNY" />
+            <item android:id="@+id/action_currency_rub"
+                app:showAsAction="ifRoom"
+                android:title="RUB" />
+            <item android:id="@+id/action_currency_btc"
+                app:showAsAction="ifRoom"
+                android:title="mBTC" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_moreitems"
+        android:orderInCategory="3"
+        android:title="Options"
+        android:icon="@drawable/ic_more_vert_white_48dp"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/action_updatecoins"
+                android:icon="@drawable/ic_autorenew_black_48dp"
+                app:showAsAction="ifRoom"
+                android:title="Update WT Coinbase" />
+
+            <item android:id="@+id/action_changedecimal"
+                android:icon="@drawable/ic_settings_ethernet_black_48dp"
+                app:showAsAction="ifRoom"
+                android:title="Number of decimals"
+                >
+                <menu>
+                    <item android:id="@+id/action_decimal2"
+                        app:showAsAction="ifRoom"
+                        android:title="2" />
+                    <item android:id="@+id/action_decimal3"
+                        app:showAsAction="ifRoom"
+                        android:title="3" />
+                    <item android:id="@+id/action_decimal4"
+                        app:showAsAction="ifRoom"
+                        android:title="4" />
+                </menu>
+
+
+
+            </item>
+
+            <item android:id="@+id/action_security"
+                android:icon="@drawable/ic_security_black_48dp"
+                app:showAsAction="ifRoom"
+                android:title="PIN Settings"
+                >
+                <menu>
+                    <item android:id="@+id/action_pinconfig"
+                        app:showAsAction="ifRoom"
+                        android:title="Enable/Disable PIN" />
+                    <item android:id="@+id/action_setpin"
+                        app:showAsAction="ifRoom"
+                        android:title="Change PIN" />
+
+                </menu>
+            </item>
+
+            <item android:id="@+id/action_removeads"
+                android:icon="@drawable/ic_shop_black_48dp"
+                app:showAsAction="ifRoom"
+                android:title="Remove Ads"
+                >
+            </item>
+
+
+
+
+            <item android:id="@+id/action_about"
+                android:icon="@drawable/ic_help_outline_black_48dp"
+                app:showAsAction="ifRoom"
+                android:title="About" />
+
+        </menu>
+    </item>
+
+
+</menu>

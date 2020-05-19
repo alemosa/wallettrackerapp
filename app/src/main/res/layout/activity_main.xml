@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/coin_bitcoin"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="  price"
+                    android:gravity="center_vertical"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvBTCPrice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="0.00"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|top"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"
+                    android:src="@drawable/coin_eth"
+                    android:gravity="right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=" price"
+                    android:gravity="center_vertical"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvETHPrice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="0.00"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|top"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="mResetCounter">
+            <TextView
+                android:id="@+id/tvBalanceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="24h % Change"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <TextView
+                android:id="@+id/tvTotalBalance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|top"
+                android:text="0.00"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+
+            <TextView
+                android:id="@+id/tvBalance24Title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="24h Change"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvTotal24Balance"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="0.00"
+                android:gravity="center_horizontal|top"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = ""
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "Coin"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "Wallet Alias"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "Balance"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text = "Conversion"
+            android:textColor="#FFFFFF"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+            <ListView
+                android:id="@+id/lvWallets"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:padding="16dp" />
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4423602901888526/8624549650">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

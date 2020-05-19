@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "730722675405",
+    "firebase_url": "https://wallet-tracker-d2a77.firebaseio.com",
+    "project_id": "wallet-tracker-d2a77",
+    "storage_bucket": "wallet-tracker-d2a77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730722675405:android:988d1b1aa23d8524",
+        "android_client_info": {
+          "package_name": "com.smartdexsolutions.wallet_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730722675405-v5a1j6f388fttckb35nvu25pa5m5ousa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smartdexsolutions.wallet_tracker",
+            "certificate_hash": "2d2e46867b7ca30c5247d914f6ead4b1006b4bbe"
+          }
+        },
+        {
+          "client_id": "730722675405-4ir0nbtjkppgnle2ne9rhkn79e4kgo6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9wSIlVczkyHxkH1qUBbBIk3tRV3-jEho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730722675405-4ir0nbtjkppgnle2ne9rhkn79e4kgo6q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:useDefaultMargins="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.smartdexsolutions.wallet_tracker.WalletEditor">
+
+    <TextView
+        android:id="@+id/tvWAlias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Wallet Alias:"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etWAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvWType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Wallet Type:"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spWType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/tvWAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Address:"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etWAddress"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/ivQRreader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="readQRCode"
+            android:src="@drawable/ic_qrreader"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="12sp"
+        android:text="Coin Stats:"
+        />
+    <WebView
+        android:id="@+id/web_charts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </WebView>
+
+
+
+</LinearLayout>
